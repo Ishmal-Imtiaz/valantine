@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yes or No</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 100px;
+            font-family: Arial, sans-serif;
+            background-image: url('https://tse4.mm.bing.net/th/id/OIP.zPK8A9LBK-U7HfIpjTuIxQHaE8?cb=defcachec2&rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+        #yesBtn {
+            background-color: green;
+            color: white;
+            left: 40%;
+        }
+
+        #noBtn {
+            background-color: red;
+            color: white;
+            left: 55%;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>WILL YOU BE MY VALANTINE? 💖</h1>
+
+<img src="https://gifdb.com/images/thumbnail/sad-bye-milk-and-mocha-farewell-6xvi880kkilupcmg.gif" alt="">
+<br>
+<br>
+<br>
+    <button id="yesBtn" class="btn" onclick="goNext()">Yes</button>
+    <button id="noBtn" class="btn">No</button>
+
+    <script>
+        function goNext() {
+            window.location.href = "valan.html";
+        }
+
+        const noBtn = document.getElementById("noBtn");
+
+        noBtn.addEventListener("mouseover", function() {
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight;
+
+            noBtn.style.left = x + "px";
+            noBtn.style.top = y + "px";
+        });
+    </script>
+
+</body>
+</html>
